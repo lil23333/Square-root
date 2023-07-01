@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>sqrt</title>
+<style>
+button {
+background : black;
+color : #fff;
+}
+</style>
+</head>
+<body>
+<input> 
+<input> 
+<input> 
+  <p></p>
+  <button>click</button> 
+<script>
+let inp = document.querySelectorAll('input');
+let p = document.querySelector('p');
+let btn = document.querySelector('button');
+let res = 0;
+undefined
+function ff () {
+    for (let el of inp) {
+let ell = +el.value;
+        res += ell;
+        p.textContent = Math.sqrt(res);
+    }}
+
+btn.addEventListener('click', ff);
+</script>
+</body>
+</html>
